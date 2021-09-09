@@ -1,6 +1,11 @@
 ---
 title: "About me"
 output: html_document
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 ---
 Hi! My name is Steph, a 2nd year MHS student in Infectious Disease Epidemiology. I'm interested in the impact infectious conditions have on reproductive and perinatal outcomes, and hope to aid in the translation of epidemiologic work to local and state maternal and child health policies. I am familiar with R and Python from my time in mood disorder research, but as you can tell with this very simple site, I still have lots to learn :) I'm looking forward to expanding my skills in this course.  
 
